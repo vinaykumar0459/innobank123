@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://innobank:innobank@ds123410.mlab.com:23410/userdata');
+mongoose.connect('mongodb://innobank:innobank@ds121980.mlab.com:21980/innobank');
 
 var userregisterSchema = mongoose.Schema({
  firstName: String,
@@ -12,6 +12,7 @@ var userregisterSchema = mongoose.Schema({
     dob : Date,
     userID:String,
     address:String,
+    accountNumber:Number,
     pancardNumber:String,
     aadharcardNumber:String,
     createdDate:Date,
