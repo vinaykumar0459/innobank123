@@ -13,6 +13,7 @@ import { FundTransferComponent } from './components/payments/fund-transfer/fund-
 import {  MiniStatementComponent } from './components/statements/mini-statement/mini-statement.component';
 import { detailedstatementComponent } from './components/payments/detailedstatement/detailedstatement.component';
 import { notfoundComponent } from './components/useraction/notfound/notfoundcomponent';
+import { AdminLoginComponent } from './components/admin/admin-login/admin-login.component';
 const appRoutes: Routes=[
 
    
@@ -30,6 +31,7 @@ const appRoutes: Routes=[
      { path : 'ministatement', component: MiniStatementComponent},
      { path : 'detailedstatement', component: detailedstatementComponent},
      { path : 'fundtransfer', component : FundTransferComponent},
+     { path : 'newaccountrequests', component : AdminLoginComponent },
      {path: '**', component: notfoundComponent}
 ]} 
   

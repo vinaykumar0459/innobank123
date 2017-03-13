@@ -12,4 +12,9 @@
         <li><a routerLink="/fundtransfer" routerLinkActive="active">Fund Transfer</a></li>
     </ul>
    </div>
+    <div class="account-summary-main" *ngIf="adminloggedin">
+    <ul>
+        <li><a routerLink="/newaccountrequests" routerLinkActive="active">New Account Requests</a></li>
+    </ul>
+   </div>
 </div>
